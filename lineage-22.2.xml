@@ -2,14 +2,18 @@
 <manifest>
   <!-- device trees -->
   <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
-  <project name="h0353914/android_device_sony_poplardcm" path="device/sony/poplardcm" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-22.2" />
 
   <!-- proprietary vendor blobs -->
   <project name="h0353914/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
-  <project name="h0353914/proprietary_vendor_sony_poplardcm" path="vendor/sony/poplardcm" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/proprietary_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-22.2" />
 
   <!-- kernel -->
   <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2_ksu" sync-s="true" />
+
+  <!-- display HAL -->
+  <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/msm8998/display" />
+  <project name="h0353914/android_hardware_qcom_display" path="hardware/qcom-caf/msm8998/display" remote="github" revision="lineage-22.2-caf-msm8998" groups="qcom,legacy-qcom" />
 
   <!-- Sony camera -->
   <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" sync-s="true" />
