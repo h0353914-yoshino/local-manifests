@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device trees -->
+  <project name="h0353914-yoshino/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="h0353914-yoshino/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-22.2" />
+
+  <!-- proprietary vendor blobs -->
+  <project name="h0353914-yoshino/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="h0353914-yoshino/proprietary_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-22.2" />
+
+  <!-- kernel -->
+  <project name="h0353914-yoshino/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-23.2_ksu" sync-s="true" />
+
+  <!-- display HAL -->
+  <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/msm8998/display" />
+  <project name="h0353914-yoshino/android_hardware_qcom_display" path="hardware/qcom-caf/msm8998/display" remote="github" revision="lineage-22.2-caf-msm8998" groups="qcom,legacy-qcom" />
+
+  <!-- Sony decompiled -->
+  <project name="h0353914-yoshino/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" sync-s="true" />
+  <project name="h0353914-yoshino/android_vendor_sony_ims" path="vendor/sony/ims" remote="github" revision="lineage-22.2" />
+  <project name="h0353914-yoshino/android_vendor_sony_libqdp" path="vendor/sony/libqdp" remote="github" revision="lineage-22.2" />
+  
+  <!-- FeliCa -->
+  <!-- <remove-project name="LineageOS/android_packages_apps_Nfc" />
+  <project name="h0353914-yoshino/android_packages_apps_Nfc" path="packages/apps/Nfc" remote="github" revision="lineage-22.2" groups="apps_nfc,pdk-fs,pdk-cw-fs" /> -->
+  
+  <!-- OpenEUICC -->
+  <!-- <remote name="gitea" fetch="https://gitea.angry.im/" />
+  <project name="h0353914-yoshino/openeuicc" path="packages/apps/OpenEUICC" remote="github" revision="master" sync-s="true" />
+  <project name="PeterCxy/android_prebuilts_openeuicc-deps" path="prebuilts/openeuicc-deps" remote="gitea" revision="master" /> -->
+
+  <!-- LineageOS-official libs, auto-fetched by roomservice -->
+  <project path="hardware/sony/macaddrsetup" remote="github" name="LineageOS/android_hardware_sony_macaddrsetup" />
+  <project path="hardware/sony/simdetect" remote="github" name="LineageOS/android_hardware_sony_simdetect" />
+</manifest>
